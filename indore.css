@@ -1,0 +1,574 @@
+/***************************header*******************/
+#my-header {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(3, 255, 238);
+    text-align: center;
+
+}
+.logo p {
+    font-size: 25px;
+    color: #f7f7f7;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow:2px 2px 4px rgb(0, 0, 0); 
+}
+/**************************header end********************/
+/*****nav*******************/
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+   margin-top: 3%;
+   text-shadow: #00d0ff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-inline-start: 12%;
+    text-shadow: #f9f9f9;
+    text-decoration-color: aqua;
+}
+
+a {
+    color: #fff;
+    text-shadow: #00d0ff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-decoration-color: aqua;
+}
+
+a:hover {
+    color: #ffcc00; /* Change to desired hover color */
+    transform: scale(1.1); /* Add scaling effect on hover */
+}
+/*************nav end**********/
+/**************************banner img ********/
+banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(1.2); /* Adding brightness for glow effect */
+    animation: glow 3s ease-in-out infinite alternate; /* Adding glow animation */
+    animation: zoomInOut 6s ease-in-out infinite alternate;
+    margin-top: 1.8%;
+    margin-bottom: 1.8%;
+    box-shadow: 0 4px 8px rgb(255, 0, 0);
+}
+
+@keyframes glow {
+    0% {
+        filter: brightness(1.2);
+    }
+    100% {
+        filter: brightness(1.4); /* Increasing brightness for glow effect */
+    }
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.05); /* Zoom in */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+/*****************************img banner end*****/
+    /*************video 1************/
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgb(255, 0, 0);
+        margin-top: 1.8%;
+        margin-bottom: 1.8%;
+    }
+    
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .video-container:hover video {
+        transform: scale(1.05);
+    }
+    /*******************************video 1 end ********/
+    /*************service**********/
+    
+    .services {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .service {
+        text-align: center;
+        width: 30%;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Soft shadow effect */
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .service img {
+        border-radius: 50%; /* Round image corners */
+    }
+    
+    .service h3 {
+        margin-top: 10px;
+    }
+    
+    .service blockquote {
+        margin: 10px 0;
+    }
+    
+    .service button {
+        background: linear-gradient(45deg, #ff8a00, #e52e71); /* Gradient background */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; /* Rounded border */
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-shadow: 0 4px 6px rgba(244, 4, 4, 0.1); /* Soft shadow effect */
+        transition: all 0.3s ease;
+    }
+    
+    .service button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    /****service heading**********/
+    .our-service {
+        text-align: center; /* Center align text */
+        background: transparent;
+    }
+    
+    .our-service h2 {
+        font-size: 28px; /* Adjust font size */
+        color: hwb(0 96% 2%); /* Text color */
+        text-transform: uppercase; /* Uppercase text */
+        letter-spacing: 2px; /* Add spacing between letters */
+        margin: 0; /* Remove default margin */
+        padding: 10px; /* Add some padding */
+        background-color:transparent /* Background color */
+        background-color  #f9f9f9; /* Background color */
+        border-radius: 5px; /* Add rounded corners */
+        box-shadow: 0 0 10px rgba(0, 197, 252, 0.999); /* Soft shadow effect */
+        display: inline-block; /* Make it an inline-block element */
+    }
+    /* Optional: Hover effect */
+    .our-service h2:hover {
+        background-color: #f6c500; /* Lighter background color on hover */
+        box-shadow: 0 0 10px rgb(143, 251, 2); /* Increase shadow on hover */
+    }
+    /***************service heading end*************************************************/
+    /*************************video background**********************************/
+    .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1; /* Ensure it's behind other content */
+    }
+    
+    .video-background video {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+    /*********************************video background end****************************************/
+    /****************************************destination******************/
+    /* Destinations Section Styles */
+.destinations {
+    padding: 50px 0;
+    text-align: center;
+    
+    overflow: hidden; /* Ensure the gradient covers the entire section */
+}
+
+.destinations h2 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: white;
+    text-decoration: underline;
+    text-shadow: #00fdfd;
+}
+
+.destination {
+    display: inline-block;
+    width: 200px;
+    margin: 0 20px; /* Adjust spacing between destination items */
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Ensure border-radius doesn't clip content */
+    position: relative;
+    transform: translateY(0); /* Reset transformation */
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination:hover {
+    transform: translateY(-10px); /* Lift the box slightly on hover */
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Rounded corners only on the top */
+}
+
+.destination-content {
+    padding: 20px;
+}
+
+.destination h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.destination button {
+    background-color: #5f27cd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.destination button:hover {
+    background-color: #4a148c;
+}
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-background .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/********************************destination end******************/
+/*********************************card**********************/
+.container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.container .box
+{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+.container .box::before
+{
+  content:' ';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.container .box::after
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.container .box:hover:before,
+.container .box:hover:after
+{
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+  
+}
+
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after
+{
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+
+.container .box span
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.container .box span::before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;  
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+}
+
+.container .box:hover span::before
+{
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.container .box span::after
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  animation-delay: -1s;
+}
+
+.container .box:hover span:after
+{
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes animate
+{
+  0%, 100%
+  {
+    transform: translateY(10px);
+  }
+  
+  50%
+  {
+    transform: translate(-10px);
+  }
+}
+
+.container .box .content
+{
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+}
+
+.container .box:hover .content
+{
+  left: -25px;
+  padding: 60px 40px;
+}
+
+.container .box .content h2
+{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.container .box .content p
+{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.container .box .content a
+{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.container .box .content a:hover
+{
+  transition: 0.4s;
+  background: #ffcf4d;
+  border: 1px solid rgba(255, 0, 88, 0.4);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+/********************************card end**********************/
+/****************************footer****************************/
+/* Footer animation */
+footer {
+    background: linear-gradient(to right, #ff00cc, #3333ff); /* Gradient background */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Add some padding */
+    animation: fadeIn 1s ease; /* Apply animation */
+    border-top: 2px solid #fff; /* White border on top */
+    box-shadow: 0px 0px 20px 5px #ff00cc; /* Neon glow */
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+footer div {
+    margin-bottom: 20px; /* Add some spacing between sections */
+}
+
+footer h3 {
+    font-size: 20px; /* Increase heading size */
+   
+}
+
+footer p, footer a {
+    font-size: 16px; /* Set paragraph and link size */
+    margin: 5px 0; /* Add some vertical spacing */
+}
+
+footer hr {
+    border-color: #fff; /* Light color for the separator */
+}
+
+footer .credits {
+    font-style: italic; /* Italics for credits */
+    font-size: 14px; /* Smaller size for credits */
+}
+/**************************************************footer end ***************************************************/
